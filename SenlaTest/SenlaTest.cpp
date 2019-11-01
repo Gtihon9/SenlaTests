@@ -22,7 +22,7 @@ int main()
 
 void PrimeNumbers()
 {
-	cout << "Задание 1" << endl;
+	cout << "Задание 1q" << endl;
 	int N;
 	cout << "Введите число N = ";
 	cin >> N;
