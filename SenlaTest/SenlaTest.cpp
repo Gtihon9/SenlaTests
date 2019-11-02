@@ -9,20 +9,22 @@ void PrimeNumbers();
 void fibonacci();
 void intersection();
 void NODandNOK();
+void Polindrom();
+void DelNum();
 int NOD(int a, int b);
 int NOK(int a, int b);
 
 int main()
 {
 	setlocale(LC_ALL, "Russian");
-	NODandNOK();
+	DelNum();
 
 }
 
 
 void PrimeNumbers()
 {
-	cout << "Задание 1q" << endl;
+	cout << "Задание 1" << endl;
 	int N;
 	cout << "Введите число N = ";
 	cin >> N;
@@ -104,6 +106,48 @@ void NODandNOK()
 	cin >> b;
 	cout << "НОД:" << NOD(a, b) << endl;
 	cout << "НОK:" << NOK(a, b) << endl;
+	cout << endl;
+	cout << ". . . . . . . . ." << endl;
+}
+
+void Polindrom()
+{
+	bool pol = false;
+	int end = 0;
+	char word[20]="";
+	cout << "Задание 5" << endl;
+	cout << "Введие слово: ";
+	cin >> word;
+	int len = strlen(word);
+	for (int i = 0; i <= len/2; i++)
+	{
+		if (word[i] != word[len - i - 1])
+			pol = true;
+		
+	}
+	if (pol == true)
+		cout << "Не полиндром";
+	else
+		cout << "Полиндром";
+	cout << endl;
+	cout << ". . . . . . . . ." << endl;
+}
+
+void DelNum()
+{
+	char word[1000] = "";
+	cout << "Задание 5" << endl;
+	cout << "Введие техт: ";
+	cin >> word;
+	int len = strlen(word);
+	for (int i = 0; i < len; i++)
+	{
+		if (word[i] != '0' && word[i] != '1' && word[i] != '2' && word[i] != '3'
+			&& word[i] != '4' && word[i] != '5' && word[i] != '6' && word[i] != '7' && word[i] != '8' && word[i] != '9')
+		{
+			cout << word[i];
+		}
+	}
 	cout << endl;
 	cout << ". . . . . . . . ." << endl;
 }
