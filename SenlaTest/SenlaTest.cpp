@@ -17,6 +17,11 @@ int NOK(int a, int b);
 int main()
 {
 	setlocale(LC_ALL, "Russian");
+	PrimeNumbers();
+	fibonacci();
+	intersection();
+	NODandNOK(); 
+	Polindrom();
 	DelNum();
 
 }
